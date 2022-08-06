@@ -81,7 +81,7 @@ pipeline {
 				   jobType: Unattended(),
                    processName: 'UiPath.Jenkins.CICD.Demo_Main.xaml',
                    resultFilePath: 'output.json',
-                   strategy: Dynamically(jobsCount: 1, machine: 'Example', user: 'uipath\balamanikanta.krishn'), 
+                   strategy: Dynamically(jobsCount: 1, machine: 'Example', user: 'balamanikanta.krishn'), 
 				   timeout: 3600, 
 				   waitForJobCompletion: true, 
 				   traceLevel: 'None'
