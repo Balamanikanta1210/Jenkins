@@ -70,8 +70,22 @@ pipeline {
 	
 
 	        )
+			 UiPathRunJob(
+          credentials: Token(accountName: "${UIPATH_ORCH_LOGICAL_NAME}", credentialsId: 'APIUserKey'),
+          failWhenJobFails: true,
+          folderName: "${UIPATH_ORCH_FOLDER_NAME}",
+          orchestratorAddress: "${UIPATH_ORCH_URL}",
+          orchestratorTenant: "${UIPATH_ORCH_TENANT_NAME}",
+          parametersFilePath: '',
+          priority: 'Low',
+          processName: 'UiPath.Jenkins.CICD.Demo_Main.xaml',
+          resultFilePath: 'output.json',
+          strategy: Dynamically(jobsCount: 1, machine: 'Example', user: 'Bala Robot'), timeout: 3600, waitForJobCompletion: true, traceLoggingLevel: 'None'
+        )
 	            }
 	        }
+			
+			
 	
 
 	
