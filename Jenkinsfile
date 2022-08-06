@@ -78,6 +78,7 @@ pipeline {
                    orchestratorTenant: "${UIPATH_ORCH_TENANT_NAME}",
                    parametersFilePath: '',
                    priority: 'Low',
+				   jobType: 'Unattended',
                    processName: 'UiPath.Jenkins.CICD.Demo_Main.xaml',
                    resultFilePath: 'output.json',
                    strategy: Dynamically(jobsCount: 1, machine: 'Example', user: 'Bala Robot'), 
