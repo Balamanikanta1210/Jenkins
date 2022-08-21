@@ -24,3 +24,9 @@ steps:
     testSet: 'TestSet_Example'
     folderName: 'Modren Example'
     testReportDestination: '$(Build.ArtifactStagingDirectory)\report.xml'
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '$(Build.ArtifactStagingDirectory)\report.xml'
+    failTaskOnFailedTests: true
+    testRunTitle: 'Test_Run_Example'
