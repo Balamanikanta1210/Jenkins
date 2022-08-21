@@ -23,3 +23,4 @@ steps:
     orchestratorConnection: 'Uipath_Orchestrator'
     testSet: 'TestSet_Example'
     folderName: 'Modren Example'
+    testReportDestination: '$(Build.ArtifactStagingDirectory)\report.xml'
