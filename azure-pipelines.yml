@@ -23,7 +23,7 @@ steps:
     orchestratorConnection: 'Uipath_Orchestrator'
     testSet: 'Folder_Modren'
     folderName: 'Modren Example'
-    testReportDestination: '$(Build.ArtifactStagingDirectory)\report.xml'
+    testReportDestination: 'Output\report.xml'
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
