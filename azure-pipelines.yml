@@ -21,7 +21,7 @@ steps:
   inputs:
     testTarget: 'TestSet'
     orchestratorConnection: 'Uipath_Orchestrator'
-    testSet: 'TestSet_Example'
+    testSet: 'Folder_Modren'
     folderName: 'Modren Example'
     testReportDestination: '$(Build.ArtifactStagingDirectory)\report.xml'
 - task: PublishTestResults@2
